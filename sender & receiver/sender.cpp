@@ -49,7 +49,7 @@ void init(int& shmid, int& msqid, void*& sharedMemPtr)
 	   on the system has a unique id, but different objects may have the same key.
 	*/
 	/* TODO: Get the id of the shared memory segment. The size of the segment must be SHARED_MEMORY_CHUNK_SIZE */
-	shmid = shmget(fileKey, SHARED_MEMORY_CHUNK_SIZE, IPC_CREAT | IPC_EXCL);
+	shmid = shmget(fileKey, SHARED_MEMORY_CHUNK_SIZE, 0666);
 	if (shmid == -1) {
 		perror("shmget");
 		exit(1);
@@ -63,7 +63,7 @@ void init(int& shmid, int& msqid, void*& sharedMemPtr)
 	}
 
 	/* TODO: Attach to the message queue */
-	msqid = msgget(fileKey, IPC_CREAT);
+	msqid = msgget(fileKey, 0666);
 	if (msqid == -1) {
 		perror("msgget");
 		exit(1);
