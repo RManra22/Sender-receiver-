@@ -2,8 +2,10 @@ Team Members:
 Roberto Manra robertmanra@csu.fullerton.edu
 Declan Tran declantran@csu.fullerton.edu
 
+The programming language used: 
+We used C++ on tuffix on virtual machine. 
 
-How to run the program
+How to run the program: 
 1. Open a terminal and go to where the program files are loacted 
 
 2. Clean up leftover IPC resources (optional)
@@ -26,15 +28,15 @@ g++ recv.cpp -o recv
 
 5. Open a second terminal window or tab you'll need one for the receiver and one for the sender
 
-6. In Terminal 1: Start the receiver
+6. In terminal 1: Start the receiver
 Run:
 ./recv
 
-7. In Terminal 2: Run the sender
+7. In terminal 2: Run the sender
 Run:
 ./sender keyfile.txt
-(Should print: The number of bytes sent is: 13)
 
-9. Check Terminal 1 (receiver)
-(Should print: The number of bytes received is: 13)
+
+9. Check both terminals 
+Should print: The number of bytes received is: 13
 
