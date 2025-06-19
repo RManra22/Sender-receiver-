@@ -1,4 +1,12 @@
-1. Clean up leftover IPC resources (shared memory + queues)
+Team Members: 
+Roberto Manra robertmanra@csu.fullerton.edu
+Declan Tran declantran@csu.fullerton.edu
+
+
+How to run the program
+1. Open a terminal and go to where the program files are loacted 
+
+2. Clean up leftover IPC resources (optional)
 Run:
 ipcs -m
 ipcs -q
